@@ -1,0 +1,14 @@
+[
+  {
+    "customerName": "billy",
+    "phoneNumber": "123",
+    "customerEmail": " billy@billy.com",
+    "customerID": "billy123"
+  },
+  {
+    "customerName": "joey",
+    "phoneNumber": "123",
+    "customerEmail": "joey@joey.com",
+    "customerID": "joey123"
+  }
+]
