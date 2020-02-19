@@ -7,6 +7,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.get('/reserve', (req, res) => {
+  res.sendFile()
+})
+
 app.get('/reservation', (req, res) => {
   fs.readFile('reservation.json', 'utf8', (e, data) => {
     if (e) { console.log(e) }

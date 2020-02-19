@@ -14,27 +14,40 @@
     <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-align-center">
       <p class="uk-heading-large uk-text-center"><span uk-icon="icon: uikit; ratio: 2"></span> BeeJay's</p>
       <hr />
-      <p class="uk-text-center uk-text-bold">We only have 5 tables! Book your seat before they are all gone!</p>
+      <p class="uk-text-center uk-text-bold">Make your reservation</p>
       <p uk-margin class="uk-text-center">
         <a href="/tables"><button class="uk-button uk-button-primary"><span uk-icon="calendar"></span> View
             Tables</button></a>
-        <a href="/reserve"><button class="uk-button uk-button-danger"><span uk-icon="plus-circle"></span> Make
-            Reservation</button></a>
+        <a href="/"><button class="uk-button uk-button-default"><span uk-icon="home"></span> Home</button></a>
       </p>
     </div>
+    <form>
+      <fieldset class="uk-fieldset">
+        <legend class="uk-legend">Your Info:</legend>
+        <div class="uk-margin">
+          Name: <input class="uk-input" type="text" placeholder="Input">
+        </div>
+        <div class="uk-margin">
+          Phone Number: <input class="uk-input" type="text" placeholder="Input">
+        </div>
+        <div class="uk-margin">
+          Email: <input class="uk-input" type="text" placeholder="Input">
+        </div>
+        <div class="uk-margin">
+          Unique ID: <input class="uk-input" type="text" placeholder="Input">
+        </div>
+      </fieldset>
+      <button class="uk-button uk-button-primary">Submit</button>
+    </form>
     <p class=uk-margin>
-      <a href="/reservation">API Tables</a> |
-      <a href="/waitlist">API: Waitlist</a>
+      <a href="/reservation"></a><button class="uk-button uk-button-link">API: Tables</button> |
+      <a href="/waitlist"></a><button class="uk-button uk-button-link">API: Waitlist</button>
     </p>
   </div>
-
-  
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit-icons.min.js"></script>
   <script>
-
-
   </script>
 </body>
 
