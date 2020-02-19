@@ -20,5 +20,6 @@
   "homepage": "https://github.com/preyx/bc-day26-restaurant#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }

@@ -16,4 +16,13 @@ app.get('/waitlist', (request, response) =>{
     response.send(data)
   })
 })
+
+app.get('/reservation', (req, res) => {
+  fs.readFile('reservation.json', 'utf8', (e, data) => {
+    if (e) { console.log(e) }
+    const reservation = JSON.parse(data)
+    res.json(reservation)
+  })
+})
+
 app.listen(3000)
