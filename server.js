@@ -13,6 +13,7 @@ app.get('/waitlist', (request, response) =>{
     if(error){console.error(error)}
     const waitlist = JSON.parse(data)
     console.log(data)
+    response.send(data)
   })
 })
 app.listen(3000)
