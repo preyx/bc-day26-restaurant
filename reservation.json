@@ -10,5 +10,11 @@
     "phoneNumber": "123",
     "customerEmail": "joey@joey.com",
     "customerID": "joey123"
+  },
+  {
+    "customerName": "reservationTest",
+    "phoneNumber": "123",
+    "customerEmail": "test@test.com",
+    "customerID": "test123"
   }
 ]
