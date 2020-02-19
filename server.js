@@ -23,4 +23,28 @@ app.get('/waitlist', (request, response) =>{
   })
 })
 
+app.post('/reservation', (req,res) => {
+  fs.readFile('reservation.json', 'utf8', (e, data) => {
+    if (e) { console.error(e) }
+    const reservation = JSON.parse(data)
+    reservation.push(req.body)
+    fs.writeFile('reservation.json', JSON.stringify(reservation), e => {
+      if (e) { console.error(e) }
+      res.sendStatus(200)
+    })
+  })
+})
+
+app.post('/waitlist', (req, res) => {
+  fs.readFile('waitlist.json', 'utf8', (e, data) => {
+    if (e) { console.error(e) }
+    const waitlist = JSON.parse(data)
+    waitlist.push(req.body)
+    fs.writeFile('waitlist.json', JSON.stringify(waitlist), e => {
+      if (e) { console.error(e) }
+      res.sendStatus(200)
+    })
+  })
+})
+
 app.listen(3000)
