@@ -1,12 +1,12 @@
 [
   {
-    "customerName": "Bob",
+    "customerName": "waitListOne",
     "phoneNumber": "123",
     "customerEmail": "bob@bob.com",
     "customerID": "bob123"
   },
   {
-    "customerName": "joe",
+    "customerName": "waitListTwo",
     "phoneNumber": "123",
     "customerEmail": "joe@joe.com",
     "customerID": "joe123"

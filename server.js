@@ -12,8 +12,7 @@ app.get('/waitlist', (request, response) =>{
   fs.readFile('waitlist.json', 'utf8', (error, data)=>{
     if(error){console.error(error)}
     const waitlist = JSON.parse(data)
-    console.log(data)
-    response.send(data)
+    response.json(waitlist)
   })
 })
 
