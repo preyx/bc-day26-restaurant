@@ -14,15 +14,50 @@
     <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-align-center">
       <p class="uk-heading-large uk-text-center"><span uk-icon="icon: uikit; ratio: 2"></span> BeeJay's</p>
       <hr />
-      <p class="uk-text-center uk-text-bold">We only have 5 tables! Book your seat before they are all gone!</p>
+      <p class="uk-text-center uk-text-bold">Current Reservations and Waiting List</p>
       <p uk-margin class="uk-text-center">
-        <a href="/tables"><button class="uk-button uk-button-primary"><span uk-icon="calendar"></span> View
-            Tables</button></a>
         <a href="/reserve"><button class="uk-button uk-button-danger"><span uk-icon="plus-circle"></span> Make
             Reservation</button></a>
+        <a href="/"><button class="uk-button uk-button-default"><span uk-icon="home"></span> Home</button></a>
       </p>
     </div>
+    <p class="uk-heading-small uk-text-center">Current Reservations</p>
+    <table class="uk-table uk-table-striped">
+      <thead>
+        <tr>
+          <th>Table #</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>johndoe</td>
+          <td>John Doe</td>
+          <td>johndoe@gmail.com</td>
+          <td>714-555-1212</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>johndoe</td>
+          <td>John Doe</td>
+          <td>johndoe@gmail.com</td>
+          <td>714-555-1212</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>johndoe</td>
+          <td>John Doe</td>
+          <td>johndoe@gmail.com</td>
+          <td>714-555-1212</td>
+        </tr>
+      </tbody>
+    </table>
     <p class=uk-margin>
+      <button class="uk-button uk-button-link">Clear Tables</button> |
       <a href="/reservation"></a><button class="uk-button uk-button-link">API: Tables</button> |
       <a href="/waitlist"></a><button class="uk-button uk-button-link">API: Waitlist</button>
     </p>
