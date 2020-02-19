@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/reserve', (req, res) => {
-  res.sendFile()
+  res.sendFile(path.join(__dirname, 'public/reservation.html'))
 })
 
 app.get('/reservation', (req, res) => {

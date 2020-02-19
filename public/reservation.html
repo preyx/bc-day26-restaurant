@@ -25,29 +25,40 @@
       <fieldset class="uk-fieldset">
         <legend class="uk-legend">Your Info:</legend>
         <div class="uk-margin">
-          Name: <input class="uk-input" type="text" placeholder="Input">
+          Name: <input id="name" class="uk-input" type="text" placeholder="Name">
         </div>
         <div class="uk-margin">
-          Phone Number: <input class="uk-input" type="text" placeholder="Input">
+          Phone Number: <input  id="phone" class="uk-input" type="text" placeholder="(123) 456-7890">
         </div>
         <div class="uk-margin">
-          Email: <input class="uk-input" type="text" placeholder="Input">
+          Email: <input id="email" class="uk-input" type="text" placeholder="name@email.com">
         </div>
         <div class="uk-margin">
-          Unique ID: <input class="uk-input" type="text" placeholder="Input">
+          Unique ID: <input id="ID" class="uk-input" type="text" placeholder="ID">
         </div>
       </fieldset>
-      <button class="uk-button uk-button-primary">Submit</button>
+      <button id="submit" class="uk-button uk-button-primary">Submit</button>
     </form>
     <p class=uk-margin>
-      <a href="/reservation"></a><button class="uk-button uk-button-link">API: Tables</button> |
-      <a href="/waitlist"></a><button class="uk-button uk-button-link">API: Waitlist</button>
+      <a href="/reservation">API: Tables</a> |
+      <a href="/waitlist">API: Waitlist</a>
     </p>
   </div>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit-icons.min.js"></script>
   <script>
+
+    document.getElementById('submit').addEventListener('click', event => {
+      event.preventDefault()
+      axios.post('/reservation', {
+        customerName: document.getElementById('name').value,
+        phoneNumber: document.getElementById('phone').value,
+        customerEmail: document.getElementById('email').value,
+        customerID: document.getElementById('ID').value
+      })
+    })
+
   </script>
 </body>
 
